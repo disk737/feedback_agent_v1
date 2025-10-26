@@ -43,3 +43,4 @@ Thumbs.db
 # UV
 .python-version
 uv.lock
+output/
