@@ -1,4 +1,5 @@
 """Main entry point for the feedback classification system."""
+from datetime import datetime
 from src.workflows import create_feedback_workflow
 from src.utils import send_slack_message, format_slack_message
 from src.config.settings import settings
@@ -13,12 +14,12 @@ def main():
     
     # Initial state
     initial_state = {
+        "current_date": datetime.now().strftime("%Y-%m-%d"),
         "feedback_items": [],
         "classified_results": [],
         "final_report": "",
         "node_calls": 0
     }
-    
     # Run workflow
     print("🚀 Starting feedback classification workflow...\n")
     result = workflow.invoke(initial_state)

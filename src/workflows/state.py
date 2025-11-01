@@ -8,6 +8,7 @@ from src.models import FeedbackItem
 
 class MessagesState(TypedDict):
     """State for batch processing feedback."""
+    current_date: str
     feedback_items: List[FeedbackItem]
     classified_results: Annotated[List[FeedbackItem], operator.add]
     final_report: str

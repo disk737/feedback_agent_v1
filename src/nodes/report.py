@@ -13,6 +13,7 @@ def create_report(state) -> dict:
     """Generate prioritized report from classified feedback."""
     
     classified_comments = state["classified_results"]
+    current_date = state.get("current_date","2025-09-01")
     
     # 1. Pre-process: Group by category
     categorized = {
@@ -44,6 +45,7 @@ def create_report(state) -> dict:
     # 3. Build the input message for the LLM
     input_message = f"""
     # CLASSIFIED USER FEEDBACK REPORT
+    **Report Date:** {current_date}
 
     ## Technical Issues ({len(categorized['Technical Issues'])} comments)
     {format_feedback_list(categorized['Technical Issues']) if categorized['Technical Issues'] else "None"}

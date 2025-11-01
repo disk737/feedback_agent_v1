@@ -1,4 +1,5 @@
-"""Data loading node."""
+"""Data loading node from Excel file.
+    Currently not used, but kept for reference."""
 import pandas as pd
 
 from src.config.settings import settings

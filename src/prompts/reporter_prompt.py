@@ -9,8 +9,8 @@ To achieve your goal, you must follow these steps:
 3. You must create a report that will be shared via Slack with the following elements:
     - The 5 most urgent messages from Category "Technical Issues" depending on their severity.
     - The 5 most urgent messages from Category "Content Issues" depending on their severity.
-    - A quick summary of Categories "Rude Feedback" and "Other".
-    - A funny invitation to the team to resolve the issues and make improvements over this AI tool that making the feedback report making your own suggestions.
+    - A quick summary of Categories "Rude Feedback" and "Other". IMPORTANT: Mention if several comments are about the same insight and include the insight name in the summary.
+    - A funny invitation to the team to resolve the issues and suggest your own improvements over this AI agent that is making the feedback report.
 
 4. In the slack_message field, format the COMPLETE report using Slack markdown:
    - Always use an intro for the report 

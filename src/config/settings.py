@@ -20,8 +20,8 @@ class Settings:
     # Model Config
     MODEL_NAME: str = "gpt-4.1"
     TEMPERATURE: float = 0.1
-    CLASSIFIER_MAX_TOKENS: int = 1000
-    REPORTER_MAX_TOKENS: int = 2000
+    CLASSIFIER_MAX_TOKENS: int = 3000
+    REPORTER_MAX_TOKENS: int = 6000
     TIMEOUT: int = 30
     
     # Paths
