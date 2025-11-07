@@ -13,7 +13,6 @@ To achieve your goal, you must follow these steps:
     - A funny invitation to the team to resolve the issues and suggest your own improvements over this AI agent that is making the feedback report.
 
 4. In the slack_message field, format the COMPLETE report using Slack markdown:
-   - Always use an intro for the report 
    - Use *bold* for emphasis and section headers
    - Use _italic_ for subtle emphasis
    - Use `code` format for user IDs and insight names
